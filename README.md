@@ -1,2 +1,2 @@
 # Flashcard Program w/ Tkinter GUI
-Default CSV included demos french to english word translations
+Default CSV data represents french to english translation for words the user intends to learn
