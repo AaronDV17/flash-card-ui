@@ -63,7 +63,6 @@ def word_known():
     new_card()
 
 
-#
 if __name__ == "__main__":
     # Data Import
     data_dict_list = load_data()
