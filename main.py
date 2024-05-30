@@ -5,7 +5,7 @@ from tkinter import *
 # Constants & Variables
 BACKGROUND_COLOR = "#B1DDC6"
 WORDS_TO_LEARN_CSV = "./data/words_to_learn.csv"
-FRENCH_WORDS_CSV = "./data/french_words.csv"
+PORTUGUESE_WORDS = "./data/portuguese_words.csv"
 CARD_FRONT_IMG = "./images/card_front.png"
 CARD_BACK_IMG = "./images/card_back.png"
 WRONG_IMG = "./images/wrong.png"
@@ -23,7 +23,7 @@ def load_data():
     try:
         data = pd.read_csv(WORDS_TO_LEARN_CSV)
     except FileNotFoundError:
-        data = pd.read_csv(FRENCH_WORDS_CSV)
+        data = pd.read_csv(PORTUGUESE_WORDS)
     return data.to_dict(orient="records")
 
 
